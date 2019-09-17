@@ -28,11 +28,12 @@ into one line sequence.
 
     eternal-bug at 2019-09
 '
+  return $info;
 }
 
 my $file = $ARGV[0];
 
-open my $f, "<", $file or die $!;
+open my $f, "<", $file or die usage() ;
 
 while(<$f>){
     chomp();
