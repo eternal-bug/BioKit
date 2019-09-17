@@ -12,3 +12,19 @@
 
 my $file = $ARGV[0];
 
+open my $f, "<", $file or die $!;
+
+while(<$f>){
+    chomp();
+    if(! m/^$/){
+        if(m/^>/){
+            if($. == 1){
+                print $_, "\n";
+            }else{
+                print "\n", $_, "\n";
+            }
+        }else{
+            print $_;
+        }
+    }
+}
