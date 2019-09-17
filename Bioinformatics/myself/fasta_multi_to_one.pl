@@ -19,12 +19,14 @@ while(<$f>){
     if(! m/^$/){
         if(m/^>/){
             if($. == 1){
-                print $_, "\n";
+                print ($_, "\n");
             }else{
-                print "\n", $_, "\n";
+                print ("\n", $_, "\n");
             }
         }else{
-            print $_;
+            print($_);
         }
     }
 }
+
+print("\n");
