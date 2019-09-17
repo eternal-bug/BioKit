@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 sub usage{
-    my $info = '
+    my $info =<<EOF;
  
  DESCRIPTION
  ===========
@@ -27,7 +27,8 @@ into one line sequence.
   ======
 
     eternal-bug at 2019-09
-'
+EOF
+
   return $info;
 }
 
