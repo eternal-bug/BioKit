@@ -1,6 +1,6 @@
 The Script resource:
 
-| 脚本 | 作者 | 作用 | 来源 |
+| script | author | function | source |
 | --- | --- | --- | --- |
 | gff2gtf.pl |  | gff file to gtf | https://github.com/ExpressionAnalysis/ea-utils |
 | gtf2bed.pl |  | gtf file to bed | https://github.com/ExpressionAnalysis/ea-utils |
